@@ -15,27 +15,27 @@
 
 
 
-        x = []
-        x = string.split(' ');
-        x = x.filter(x => x != ',')
+    //     x = []
+    //     x = string.split(' ');
+    //     x = x.filter(x => x != ',')
 
-        console.log(x)
+    //     console.log(x)
 
 
 
-        console.log(x.map((e, i) => {
-            console.log(i + 2)
-            if (i % 2 == 0) {
-                return e.toUpperCase();
+    //     console.log(x.map((e, i) => {
+    //         console.log(i + 2)
+    //         if (i % 2 == 0) {
+    //             return e.toUpperCase();
 
-            }
-            else {
-                return e.toLowerCase();
-            }
-        }));
+    //         }
+    //         else {
+    //             return e.toLowerCase();
+    //         }
+    //     }));
     }
 
-    swapCase("hello stranger , what do we have today?")
+    // swapCase("hello stranger , what do we have today?")
 
 
 
@@ -52,7 +52,7 @@ var shiftLetters = function (string) {
 // // code!
 // 
 
-};
+}
 
 
 
@@ -85,7 +85,29 @@ var shiftLetters = function (string) {
 // - 3 of diamonds
 
 
+var suits = ["spades", "diamonds", "clubs", "hearts"];
+var values = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"];
 
+function getDeck()
+{
+    var deck = new Array();
+    var card= {}
+
+    suits.forEach(e => 
+    {
+        values.forEach(v => 
+		
+		{
+			card = {Value: values[v], Suit: suits[e]};
+            deck.push(card)}
+            );
+    });
+	//return deck;
+    }
+
+
+
+console.log(getDeck() )
 
 
 
@@ -97,16 +119,16 @@ var shiftLetters = function (string) {
 // Finally, reverse the order of the new array, 
 //join it back together into a string, and display it to the user.
         
-var swapCase = function (string) {s
-x = []
-        x = string.split(' ');
-        newList =[]
+// var swapCase = function (string) {s
+// x = []
+//         x = string.split(' ');
+//         newList =[]
 
-console.log( 
+// console.log( 
 
-x.map(e => e.push(newList).reverse())
+// x.map(e => e.push(newList).reverse())
 
-)
+// )
 
-}
+// }
 </script>
