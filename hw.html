@@ -1,8 +1,5 @@
 <script>
     // ------ FOR ALL THE EXCERCISES ONLY USE ARROW FUNCTIONS ----- //
-
-
-
     // PART 1: USE MAP IN THE FOLLOWING EXCERCISES //
 
     // A) write a function called swapCase that takes a string of words and uses
@@ -15,24 +12,24 @@
 
 
 
-    //     x = []
-    //     x = string.split(' ');
-    //     x = x.filter(x => x != ',')
+        //     x = []
+        //     x = string.split(' ');
+        //     x = x.filter(x => x != ',')
 
-    //     console.log(x)
+        //     console.log(x)
 
 
 
-    //     console.log(x.map((e, i) => {
-    //         console.log(i + 2)
-    //         if (i % 2 == 0) {
-    //             return e.toUpperCase();
+        //     console.log(x.map((e, i) => {
+        //         console.log(i + 2)
+        //         if (i % 2 == 0) {
+        //             return e.toUpperCase();
 
-    //         }
-    //         else {
-    //             return e.toLowerCase();
-    //         }
-    //     }));
+        //         }
+        //         else {
+        //             return e.toLowerCase();
+        //         }
+        //     }));
     }
 
     // swapCase("hello stranger , what do we have today?")
@@ -41,73 +38,92 @@
 
 
 
-// B) Write a function shiftLetters that takes a string and uses .
-//map to return an encoded string with each letter shifted down the
-// alphabet by one. Hint: Use Look up the JS functions 
-//String.fromCharCode() and String.charCodeAt() .
-// see if you can use Ascii code to acomplish this
-// ex. shiftLetters('hello') // => 'ifmmp'
-// ex. (shiftLetters('abcxyz') // => "bcdyz{"
+    // B) Write a function shiftLetters that takes a string and uses .
+    //map to return an encoded string with each letter shifted down the
+    // alphabet by one. Hint: Use Look up the JS functions 
+    //String.fromCharCode() and String.charCodeAt() .
+    // see if you can use Ascii code to acomplish this
+    // ex. shiftLetters('hello') // => 'ifmmp'
+    // ex. (shiftLetters('abcxyz') // => "bcdyz{"
+
+    var z = [];
 var shiftLetters = function (string) {
-// // code!
-// 
 
+
+  x = string.split("");
+  x.map((e, i) => {
+    var newChar = e.charCodeAt(x)
+    var newChar2 = String.fromCharCode(newChar + 1)
+
+    z += newChar2;
+
+    
+
+  })
+  console.log(z)
+  // console.log(z); 
+  // // code!
 }
+// console.log(shiftLetters('hello'));
+console.log(shiftLetters('abcxyz'));
 
 
 
 
-// PART 2: USE FOREACH IN THE FOLLOWING EXCERCISES
-
-// A) Build a Deck
-// Use a forEach() loop within another forEach() loop to build an 
-//array representing a //deck of cards. A deck consists of
-// 52 cards - 13 ranks in each of 4 suits.
-// Then, display a list of every card in the deck. 
-//(Hint: Each element of the array should read something like "ace of
-// spades" or "4 of hearts").
-// The start of your output should look something like this:
-// - ace of clubs
-// - 2 of clubs
-// - 3 of clubs
-// - 4 of clubs
-// - 5 of clubs
-// - 6 of clubs
-// - 7 of clubs
-// - 8 of clubs
-// - 9 of clubs
-// - 10 of clubs
-// - jack of clubs
-// - queen of clubs
-// - king of clubs
-// - ace of diamonds
-// - 2 of diamonds
-// - 3 of diamonds
-
-
-var suits = ["spades", "diamonds", "clubs", "hearts"];
-var values = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"];
-
-function getDeck()
-{
-    var deck = new Array();
-    var card= {}
-
-    suits.forEach(e => 
-    {
-        values.forEach(v => 
-		
-		{
-			card = {Value: values[v], Suit: suits[e]};
-            deck.push(card)}
-            );
-    });
-	//return deck;
-    }
 
 
 
-console.log(getDeck() )
+
+
+    // PART 2: USE FOREACH IN THE FOLLOWING EXCERCISES
+
+    // A) Build a Deck
+    // Use a forEach() loop within another forEach() loop to build an 
+    //array representing a //deck of cards. A deck consists of
+    // 52 cards - 13 ranks in each of 4 suits.
+    // Then, display a list of every card in the deck. 
+    //(Hint: Each element of the array should read something like "ace of
+    // spades" or "4 of hearts").
+    // The start of your output should look something like this:
+    // - ace of clubs
+    // - 2 of clubs
+    // - 3 of clubs
+    // - 4 of clubs
+    // - 5 of clubs
+    // - 6 of clubs
+    // - 7 of clubs
+    // - 8 of clubs
+    // - 9 of clubs
+    // - 10 of clubs
+    // - jack of clubs
+    // - queen of clubs
+    // - king of clubs
+    // - ace of diamonds
+    // - 2 of diamonds
+    // - 3 of diamonds
+
+
+    // var suits = ["spades", "diamonds", "clubs", "hearts"];
+    // var values = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"];
+
+    // function getDeck() {
+    //     var deck = new Array();
+    //     var card = {}
+
+    //     suits.forEach(e => {
+    //         values.forEach(v => {
+    //             card = { Value: values[v], Suit: suits[e] };
+    //             deck.push(card)
+    //         });
+    //     });
+    // return deck;
+
+
+    // }
+
+    // getDeck()
+
+    // console.log(getDeck() + "hello")
 
 
 
@@ -118,7 +134,7 @@ console.log(getDeck() )
 // length.
 // Finally, reverse the order of the new array, 
 //join it back together into a string, and display it to the user.
-        
+
 // var swapCase = function (string) {s
 // x = []
 //         x = string.split(' ');
